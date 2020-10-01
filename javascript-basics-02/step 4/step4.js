@@ -1,6 +1,14 @@
-document.querySelector("button").onclick=function(){
-    if(confirm("Do you want to clear all the fields? ") ){
-    document.querySelector("#name").value = "";
-    document.querySelector("#surname").value = "";
-    document.querySelector("#city").value="";
-}};
+let name = document.querySelector("#name");
+let surname = document.querySelector("#surname");
+let city = document.querySelector("#city");
+let button  = document.querySelector("button");
+
+button.onclick = function(){
+    if(confirm("yes/no")){
+        name.value = "";
+        surname.value="";
+        city.value="";
+    }else{
+        alert("Are you sure ?");
+    }
+};
